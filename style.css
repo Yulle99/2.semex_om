@@ -1,0 +1,1224 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap');
+:root{
+    --white: #F7F7F7;
+    --greenblue: #5E7B81;
+    --lightblue: #CAD7D9;
+    --brown: #BEB8A9; 
+}
+
+
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style: none;
+font-family: 'mukta malar';
+}
+
+
+
+@media (max-width:700px){ /*mobil-format*/
+    .ddmenu img{
+        display: none;
+    }
+    .ddmenu{
+        display: none;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #717171;
+      }
+
+    .slidspc{
+        display: none;
+    }
+    .miljø img{
+        display: none;
+    }
+
+    .værksted img{
+        display: none;
+    }
+}
+
+
+/*body*/
+body{
+    background-color: #CAD7D9;
+}
+
+main{
+margin-top: 100px;
+}
+/*header*/
+/* nav */ /*https://www.youtube.com/watch?v=rgUp302f_lY */
+.topnav{
+    background: #EFEFEF;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.topnav img {
+    height: 100px;
+}
+
+input{
+    width: 400px;
+    height: 10px;
+    padding: 20px;
+}
+/*https://  www.youtube.com/watch?v=wlCPOwBr7no*/
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5;
+}
+
+.menu-icons{
+    color: #eee;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translatey(-50%);
+    display: none;
+}
+
+nav{/*https://www.youtube.com/watch?v=wlCPOwBr7no*/
+    width: 100%;
+    height: 8rem;
+    color: #000;
+    background-color: var(--greenblue);
+}
+
+.nav-list{
+    display: flex;
+    margin-left: 50px;
+}
+
+.nav-list li{
+    line-height: 4rem;
+    position: relative;
+}
+
+.sub-menu{
+    width: 50rem;
+    line-height: 4rem;
+    display: block;
+    position: absolute;
+    background-color:white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 650ms ease;
+    padding: 50px;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+
+.nav-list a{
+    display: block;
+    color: var(--white);
+    padding: 0 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition:color 650ms;
+}
+
+.nav-list :hover{
+    background: var(--lightblue);
+}
+
+
+.sub-menu a:hover{
+    background-color: lightgrey;
+}
+
+.sub-menu a{
+    color: #000;
+    font-size: 14px;
+    
+}
+
+.sub-menu-mere{
+    width: 20rem;
+    line-height: 4rem;
+    display: block;
+    position: absolute;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 650ms ease;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.sub-menu-mere a:hover{
+    background-color: lightgrey;
+}
+
+.sub-menu-mere a{
+    color: #000;
+    font-size: 14px;
+    
+}
+
+.nav-list :hover > .sub-menu-mere{
+    opacity: 1 ;
+    visibility: visible;
+} 
+
+
+
+
+.nav-list :hover > .sub-menu{
+    opacity: 1 ;
+    visibility: visible;
+} 
+
+nav img{
+    height: 150px;
+    width: 150px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sub-menu :hover{
+    background: white;
+}
+b
+
+
+
+/* footer*/
+footer{
+    background:#EFEFEF;
+    padding: 10px;
+}
+
+footer div{
+    margin-top: 50px;
+}
+
+footer p{
+    margin: 20px;
+    font-size: 16px;
+}
+
+footer .icon div{
+ display: flex;
+ margin: 10px;
+}
+
+footer img{
+height: 45px;
+width: 45px;
+}
+
+/*index(forside)*/
+
+.nyhed{
+    position: relative;
+    width: 100%;
+    height: 550px;
+    color: white;
+    box-sizing: border-box; 
+}
+
+.nyhed:after{
+    position:absolute;
+    content: '';
+    background-image: url("img/cyklister-edit.jpg");
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(6deg);
+    z-index: -1;
+  /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
+}
+
+.nyhed div{
+    padding: 40px 20px 0px 120px;/*top/right/bottom/left*/
+}
+
+.nyhed h1 {
+    font-size: 32px;
+    font-weight: bolder;
+    padding-top: 100px;
+    
+}
+
+.nyhed p{
+    font-size: 16px ;
+    margin-bottom:20px;
+}
+
+.nyhed button{
+    margin-top: 20px;
+    width: 80%;
+    height: 40px;
+    text-align: center;
+}
+.populærekategori{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+.populærekategori:after{
+    position:absolute;
+    content: '';
+    background-color: var(--white);
+    top: -70px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform-origin: top left;
+    transform: skewY(6deg);
+    z-index: -1;
+     /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
+}
+
+.populærekategori h2{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.populærekategori img, .tilbud img{
+    width: 200px;
+}
+
+.værksted{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+.værksted:after{
+    position:absolute;
+    content: '';
+    background-color: var(--lightblue);
+    top:-50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(-6deg);
+    z-index:-1;
+     /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
+}
+
+.overskrift{
+    font-size: 2px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.værksted p{
+    font-size: 16px;
+    padding:0px 30px 30px 30px;
+    font-weight: lighter;
+}
+
+.værksted a{
+    padding: 10px 30px;
+
+
+}
+
+.tilbud{
+    position: relative;
+    width:100%;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+.tilbud:after{
+    position:absolute ;
+    content: '';
+    background-color: #fff;
+    top:-100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(6deg);
+    z-index:-1;
+     /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
+}
+
+.miljø{
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 350px;
+    box-sizing: border-box;
+}
+
+.miljø:after{
+    position:absolute;
+    content: '';
+    background-image: url("img/gettyimages-168346757_web.jpg");
+    top:-50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(-6deg);
+    z-index: -1;
+     /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
+
+}
+.miljø h1, .lejencykel h1{
+    font-size: 32px;
+    text-align: center;
+}
+
+.miljø p, .lejencykel p{
+    font-size: 20px;
+    margin-top: 25px;
+    padding: 0px 50px 20px 50px;
+}
+
+.miljø a, .lejencykel a{
+    padding: 0px 50px;
+}
+
+.lejencykel{
+    position: relative;
+    color:#fff;
+    width:100%;
+    height: 350px;
+    box-sizing: border-box;
+    
+}
+
+.lejencykel:after{
+    position:absolute ;
+    content: '';
+    background-image: url("img/cyklister-edit.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top:-50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(6deg);
+    z-index: -1;
+     /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
+}
+
+.extra{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.extra:before{
+    position:absolute ;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color:inherit;
+    transform-origin: bottom left;
+    transform: skewY(-6deg);
+    z-index: -1;
+     /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
+}
+
+
+.pris{
+    font-size: 12px;
+    display: flex;
+    font-weight: bold;
+}
+   
+.prisfør{
+   color: rgb(214, 0, 0);
+   margin-right: 10px;
+}
+
+.slids{
+  margin-left: 80px;
+}
+
+.slids img{
+    width: 80%;
+    height: 200px;
+}
+
+.slids button{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+
+
+button{
+    background-color: var(--brown);
+    border: none;
+    color: white;
+    font-size:16px ;
+    text-align: center;
+    padding: 10px 100px;
+    border-radius: 10px; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+    /*https://www.w3schools.com/css/css3_buttons.asp*/
+}
+
+
+
+
+
+/*produktbeskrivelse*/
+
+.produktbesk{
+    margin-left: 7.5%;
+    margin-right: 8%;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    padding-top: 300px;
+    padding-bottom: 20px;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.gul_cykel{
+    max-width: 100%;
+  height: auto;
+}
+
+/*Mærker - Nicoline*/
+.mærker-kort {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px 15px;
+    justify-content: center;
+    padding-bottom: 70px;
+    
+  }
+  .mærke {
+    background-color: var(--white);
+    box-shadow: 5px 10px 18px #a0b4b8;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 25px;
+    text-align: center;
+    height: 80px;
+    width: 120px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+    /*
+    https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+    https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2
+    https://www.w3schools.com/css/tryit.asp?filename=trycss_align_image
+    */
+  .mærke img {
+    width: 100px;
+  }
+
+  .mærker-alt ul {
+      margin-top: 200px;
+  }
+  /* Brugt til "mærker"
+  https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+  https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2
+  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed
+  */
+
+  /*Mere siden mobil - Karoline*/
+.baggrund-højre {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: black;
+    box-sizing: border-box;
+    padding-bottom: 10%;
+}
+
+.baggrund-højre::after {
+    position:absolute;
+    content: '';
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(5deg);
+    z-index: -1;
+    padding-top: 10%;
+}
+
+.baggrund-højre h1 {
+    padding-left: 5%;
+}
+
+.baggrund-venstre {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: black;
+    box-sizing: border-box;
+    padding-bottom: 10%;
+}
+
+.baggrund-venstre::after {
+    position:absolute;
+    content: '';
+    background-color: var(--white);
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(5deg);
+    z-index: -1;
+    padding-top: 10%;
+}
+
+.mere-højre {
+    text-align: right;
+    font-size: medium;
+}
+
+.mere-højre h1 {
+    font-size: 30px;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.mere-venstre {
+    text-align: left;
+    font-size: medium;
+}
+
+.mere-venstre h1 {
+    font-size: 30px;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.faq-box {
+    flex-direction: column;
+    padding: 5%;
+}
+
+.faq-højre {
+    text-decoration: none;
+}
+
+.faq-højre a {
+    color: black;
+}
+
+.faq-venstre {
+    text-decoration: none;
+}
+
+.faq-venstre a {
+    color: black;
+}
+
+.info {
+    display: flex;
+    
+}
+
+.info h1,h2 {
+    font-size: medium;
+    margin: 5%;
+}
+
+.navn-mail {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navn-h1 {
+    height: 20px;
+    border-style: solid ;
+    border-color: #707070;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.mail-h1 {
+    height: 20px;
+    border-style: solid;
+    border-color: #707070;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.skriv-her {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.skriv-her-h1 {
+    width: 90%;
+    height: 100px;
+    border-style: solid;
+    border-color: #707070;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: var(--white);
+}
+
+.send-besked {
+    background-color: var(--brown);
+    color: var(--white);
+    border-radius: 10px;
+}
+
+
+/*Brugt til siden "mere"*/
+/*https://www.w3schools.com/tags/tag_input.asp besøgt d. 2/6
+https://www.youtube.com/watch?v=6QGOhCZLdhs besøgt d. 1/6
+https://www.javatpoint.com/how-to-center-a-button-in-css besøgt d. 2/6*/
+
+/*cykler imi */
+.cykler-alt{
+    display: none;
+    
+}
+.cykler-menu {
+    background-color: var(--white);
+    height: 70%;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 30px;
+    margin-top: 100px;
+  }
+  .damecyklergrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px 30px;
+    justify-content: center; 
+    background-position: center;
+    display: flex;
+  }
+
+  .hvid-baggrund {
+      width: 80%;
+      height: 90%;
+      background-color: var(--white);
+  }
+
+  .damecykler button {
+      height: 50px;
+      width: 250px;
+      padding:5%;
+      display: flex;
+      justify-content: center;
+      
+  }
+
+  .row {
+      display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px 20px;
+    padding-left: 240px;
+}
+ 
+
+  .damecykler {
+
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+
+.damecykler h2{
+    padding:10px;
+}
+
+.damecykler img{
+    width: 250px;
+}
+
+ 
+
+   /*Brugt til "mærker"
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2 */
+
+
+@media (min-width:700px){ /*laptop-format*/
+/*pc style - Yulin*/
+
+/* nav style */
+.topnav{
+    background: #EFEFEF;
+    padding-left: 90px;
+    padding-right: 90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.topnav img{
+    height:35px ;
+    width:35px;
+}
+
+.ddmenu{/* drop down menu*/
+   
+}
+
+/*index*/
+.nyhed div{
+   margin-left: 1100px;
+}
+
+.nyhed h1{
+    padding-top: 200px ;
+    font-size: 48px;
+}
+
+.nyhed p{
+    font-size: 24px;
+}
+
+.nyhed button{
+    margin: 0;
+    width: 80%;
+}
+
+.værksted{
+    display: flex;
+}
+
+.værksted div{
+    text-align: right;
+    padding-left: 450px;
+    padding-right: 50px ;
+    margin-top: -50px;
+}
+
+.værksted .overskrift{
+    font-size: 48px;
+}
+
+.værksted p{
+    font-size: 24px;
+}
+
+.værksted img{
+    height: 350px;
+    width: 300px;   
+}
+
+.miljø{
+    display: flex;
+    color: #000;
+}
+
+.miljø div{
+    text-align: right;
+    padding-left: 450px;
+    padding-right: 50px ;
+    margin-top: -50px;
+}
+
+.miljø .overskrift{
+    font-size: 48px;
+}
+
+.miljø p{
+    font-size: 24px;
+    margin-left: 200px;
+}
+
+.miljø img{
+    height: 350px;
+    width: 300px;   
+}
+
+.slidspc div{
+    margin: 0;
+}
+
+.slidspc{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.slidspc img{
+    width: 300px;
+    height: 200px;
+    border: 1px solid #000;
+}
+
+.slidspc button{
+    width: 100%;
+}
+
+
+.pris{
+    font-size: 24px;
+}
+
+
+
+/*footer style*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 95px;
+    padding-right: 95px;
+        
+}
+
+footer div{
+    margin-top: 10px;
+}
+
+footer p{
+    font-size: 20px;
+}
+
+
+
+    
+/*Mærker - Nicoline*/
+.mærker-alt{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px 20px;
+    padding-left: 240px;
+}
+.mærker-menu {
+    background-color: var(--white);
+    height: 70%;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 30px;
+    margin-top: 100px;
+  }
+  
+  .mærker-menu a {
+    padding: 2px 10px 2px 30px;
+    font-size: 16px;
+    color: var(--greenblue);
+    display: block;
+  }
+  
+  .mærker-menu a:hover {
+    color: var(--lightblue);
+  }
+
+.mærker-kort {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 40px 20px;
+    padding: 100px;
+    
+  }
+  .mærke {
+    background-color: var(--white);
+    box-shadow: 5px 10px 18px #a0b4b8;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 70px;
+    text-align: center;
+    height:110px;
+    width: 160px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+
+  /*Mere siden - Karoline (laptop format)*/
+.mere-højre {
+    padding-top: 5%;
+}
+
+  .mere-højre h1 {
+    font-size: 15px;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.mere-højre h2 {
+    font-size: 10px;
+    margin-top: -15px;
+}
+
+.mere-venstre h1 {
+    font-size: 15px;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.mere-venstre h2 {
+    font-size: 10px;
+    margin-top: -15px;
+}
+
+.faq-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.faq-højre a:hover {
+    color: var(--greenblue);
+}
+
+.faq-venstre a:hover {
+    color: var(--greenblue);
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info h1,h2 {
+    font-size: 10px;
+}
+
+.navn-h1 {
+    width: 300px;
+}
+
+.mail-h1 {
+    width: 300px;
+}
+
+.send-besked {
+    width: 450px;
+}
+
+
+
+/*Imi pc format*/
+/*cykler imi */
+.cykler-alt{
+    display: block; 
+}
+
+
+
+/*Brugt til "mærker"
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed
+
+Avenue logo: https://vindingcykelcenter.dk/
+Centurion logo: https://power2bike.com/elcykel-batteri/centurion-elcykler/
+Dresco logo: https://www.carlab.dk/maerker/dresco
+Ebsen bikes logo:http://www.cykelsmeden-amager.dk/?CYKLER
+Everton logo: http://www.everton.dk/
+Fuji logo: https://www.clipartmax.com/middle/m2H7i8N4N4b1N4Z5_fuji-was-established-in-japan-in-1899-now-owned-by-fuji-bikes/
+Kildemoes logo: http://www.egoing.dk/dk/om-elcykler/om-egoing-70/
+Monark logo: https://www.pricerunner.dk/mi/121057/Monark
+Nishiki logo: https://commons.wikimedia.org/wiki/File:Nishiki_wordmark.svg
+Raleigh logo: https://motorcycle-logos.com/raleigh-bikes-logo/
+Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
+*/
+
+
+@media (min-width:1000px){
+
+/*index baggrund*/
+.nyhed{
+    height: 800px;
+}
+
+.populærekategori{
+    height: 450px;
+}
+
+.populærekategori:after{
+    top:-300px;
+}
+
+.værksted{
+    height: 300px;
+    
+}
+
+.værksted:after{
+   top: -200px;
+}
+
+.tilbud{
+    height: 650px;
+}
+
+.miljø{
+    height: 450px;
+}
+
+.miljø:after{
+    top:-200px;
+    background-color: var(--white);
+    background-image: none;
+}
+
+.lejencykel:after{
+    top:-200px
+}
+
+/*footer style*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 95px;
+    padding-right: 95px;
+        
+}
+
+footer div{
+    margin-top: 10px;
+}
+
+footer p{
+    font-size: 20px;
+}
+
+.slids{
+    display: none;
+}
+
+}
+
+@media (max-width:700px){ /*mobil-format*/
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #717171;
+      }
+
+    .slidspc{
+        display: none;
+    }
+    .miljø img{
+        display: none;
+    }
+
+    .værksted img{
+        display: none;
+    }
+
+    .topnav{
+        display: none;
+    }
+
+    
+
+    .nav-list{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: none;
+        align-items: initial;
+        flex-direction: column;
+        background-color: var(--white);
+        z-index: 1000;
+    }
+
+    .nav-list > li{
+        line-height: 2rem;
+    }
+
+    .nav-list :hover{
+        background-color: lightgrey;
+    }
+    .sub-menu{
+        position: initial;
+        border: 3px solid transparent;
+        margin-left: 1rem;
+        max-height: 0;
+    }
+
+    .nav-list li :hover> .sub-menu{
+        opacity: 1;
+        visibility: visible;
+        max-height: initial;
+    }
+    
+
+    .menu-icons{
+        display: block;
+    }    
+
+    .ion-md-close{
+        display: none;
+    }
+
+    nav.active .ion-md-close{
+        display: block;
+        color: black;
+    }
+
+    nav.active .ion-md-menu{
+        display: none;
+    }
+
+    nav.active .nav-list{
+        display: flex;
+    }
+
+}
+
