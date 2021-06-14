@@ -208,14 +208,12 @@ nav img{
 .sub-menu :hover{
     background: white;
 }
-b
-
-
 
 /* footer*/
 footer{
     background:#EFEFEF;
     padding: 10px;
+    display: flex;
 }
 
 footer div{
@@ -805,9 +803,6 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2 */
     width:35px;
 }
 
-.ddmenu{/* drop down menu*/
-   
-}
 
 /*index*/
 .nyhed div{
@@ -1220,5 +1215,4 @@ footer p{
         display: flex;
     }
 
-}
-
+}}

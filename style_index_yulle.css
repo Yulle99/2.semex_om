@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap');
+:root{
+    --white: #F7F7F7;
+    --greenblue: #5E7B81;
+    --lightblue: #CAD7D9;
+    --brown: #BEB8A9; 
+}
+
+
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style: none;
+font-family: 'mukta malar';
+}
+
+
+/*nav*/
+
+.topnav{
+    background: #EFEFEF;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.topnav img {
+    height: 100px;
+}
+
+input{
+    width: 400px;
+    height: 10px;
+    padding: 20px;
+}
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5;
+}
+
+.menu-icons{
+    color: #eee;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translatey(-50%);
+    display: none;
+}
+
+nav{/*https://www.youtube.com/watch?v=wlCPOwBr7no*/
+    width: 100%;
+    height: 8rem;
+    color: #000;
+    background-color: var(--greenblue);
+}
+
+.nav-list{
+    display: flex;
+    margin-left: 50px;
+}
+
+.nav-list li{
+    line-height: 4rem;
+    position: relative;
+}
+
+.sub-menu{
+    width: 50rem;
+    line-height: 4rem;
+    display: block;
+    position: absolute;
+    background-color:white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 650ms ease;
+    padding: 50px;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+
+.nav-list a{
+    display: block;
+    color: var(--white);
+    padding: 0 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition:color 650ms;
+}
+
+.nav-list :hover{
+    background: var(--lightblue);
+}
+
+
+.sub-menu a:hover{
+    background-color: lightgrey;
+}
+
+.sub-menu a{
+    color: #000;
+    font-size: 14px;
+    
+}
+
+.sub-menu-mere{
+    width: 20rem;
+    line-height: 4rem;
+    display: block;
+    position: absolute;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 650ms ease;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.sub-menu-mere a:hover{
+    background-color: lightgrey;
+}
+
+.sub-menu-mere a{
+    color: #000;
+    font-size: 14px;
+    
+}
+
+.nav-list :hover > .sub-menu-mere{
+    opacity: 1 ;
+    visibility: visible;
+} 
+
+
+
+
+.nav-list :hover > .sub-menu{
+    opacity: 1 ;
+    visibility: visible;
+} 
+
+nav img{
+    height: 150px;
+    width: 150px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sub-menu :hover{
+    background: white;
+}
+
+
+/*index(forside)*/
+main{
+    position: relative;
+}
+.nyhed{
+    position: relative;
+    width: 100%;
+    height: 550px;
+    color: white;
+    box-sizing: border-box; 
+}
+
+.nyhed:after{
+    position:absolute;
+    content: '';
+    background-image: url("img/cyklister-edit.jpg");
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(6deg);
+    z-index: -1;
+  /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
+}
+
+.nyhed div{
+    padding: 40px 20px 0px 120px;/*top/right/bottom/left*/
+}
+
+.nyhed h1 {
+    font-size: 32px;
+    font-weight: bolder;
+    padding-top: 100px;
+    
+}
+
+.nyhed p{
+    font-size: 16px ;
+    margin-bottom:20px;
+}
+
+.nyhed button{
+    margin-top: 20px;
+    width: 80%;
+    height: 40px;
+    text-align: center;
+}
+.populærekategori{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+.populærekategori:after{
+    position:absolute;
+    content: '';
+    background-color: var(--white);
+    top: -70px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform-origin: top left;
+    transform: skewY(6deg);
+    z-index: -1;
+     /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
+}
+
+.populærekategori h2{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.populærekategori img, .tilbud img{
+    width: 200px;
+}
+
+.værksted{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+.værksted:after{
+    position:absolute;
+    content: '';
+    background-color: var(--lightblue);
+    top:-50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(-6deg);
+    z-index:-1;
+     /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
+}
+
+.overskrift{
+    font-size: 2px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.værksted p{
+    font-size: 16px;
+    padding:0px 30px 30px 30px;
+    font-weight: lighter;
+}
+
+.værksted a{
+    padding: 10px 30px;
+
+
+}
+
+.tilbud{
+    position: relative;
+    width:100%;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+.tilbud:after{
+    position:absolute ;
+    content: '';
+    background-color: #fff;
+    top:-100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(6deg);
+    z-index:-1;
+     /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
+}
+
+.miljø{
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 350px;
+    box-sizing: border-box;
+}
+
+.miljø:after{
+    position:absolute;
+    content: '';
+    background-image: url("img/gettyimages-168346757_web.jpg");
+    top:-50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(-6deg);
+    z-index: -1;
+     /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
+
+}
+.miljø h1, .lejencykel h1{
+    font-size: 32px;
+    text-align: center;
+}
+
+.miljø p, .lejencykel p{
+    font-size: 20px;
+    margin-top: 25px;
+    padding: 0px 50px 20px 50px;
+}
+
+.miljø a, .lejencykel a{
+    padding: 0px 50px;
+}
+
+.lejencykel{
+    position: relative;
+    color:#fff;
+    width:100%;
+    height: 350px;
+    box-sizing: border-box;
+    
+}
+
+.lejencykel:after{
+    position:absolute ;
+    content: '';
+    background-image: url("img/cyklister-edit.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top:-50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(6deg);
+    z-index: -1;
+     /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
+}
+
+.extra{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.extra:before{
+    position:absolute ;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color:inherit;
+    transform-origin: bottom left;
+    transform: skewY(-6deg);
+    z-index: -1;
+     /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
+}
+
+
+.pris{
+    font-size: 12px;
+    display: flex;
+    font-weight: bold;
+}
+   
+.prisfør{
+   color: rgb(214, 0, 0);
+   margin-right: 10px;
+}
+
+.slids{
+  margin-left: 80px;
+}
+
+.slids img{
+    width: 80%;
+    height: 200px;
+}
+
+.slids button{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+
+
+button{
+    background-color: var(--brown);
+    border: none;
+    color: white;
+    font-size:16px ;
+    text-align: center;
+    padding: 10px 100px;
+    border-radius: 10px; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+    /*https://www.w3schools.com/css/css3_buttons.asp*/
+}
+
+
+/* footer*/
+footer{
+    background:#EFEFEF;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer div{
+    margin-top: 50px;
+}
+
+footer p{
+    margin: 20px;
+    font-size: 16px;
+}
+
+footer .icon div{
+ display: flex;
+ margin: 10px;
+}
+
+footer img{
+height: 45px;
+width: 45px;
+}
