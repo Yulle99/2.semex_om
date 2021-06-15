@@ -17,7 +17,7 @@ font-family: 'mukta malar';
 
 
 
-@media (max-width:700px){ /*mobil-format*/
+@media  (max-width:700px){ /*mobil-format*/
     .ddmenu img{
         display: none;
     }
@@ -723,12 +723,13 @@ https://www.javatpoint.com/how-to-center-a-button-in-css besøgt d. 2/6*/
     background-color: var(--white);
     height: 70%;
     width: 220px;
-    position: fixed;
+    float:left;
     top: 0;
     left: 0;
     overflow-x: hidden;
-    padding-top: 30px;
+    margin: 30px 20px;
     margin-top: 100px;
+    padding: 20px;
   }
   .damecyklergrid {
     display: grid;
@@ -737,6 +738,7 @@ https://www.javatpoint.com/how-to-center-a-button-in-css besøgt d. 2/6*/
     justify-content: center; 
     background-position: center;
     display: flex;
+    margin-top:10%;
   }
 
   .hvid-baggrund {
