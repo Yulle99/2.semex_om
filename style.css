@@ -17,40 +17,6 @@ font-family: 'mukta malar';
 
 
 
-@media (max-width:700px){ /*mobil-format*/
-    .container img{
-        display: none;
-    }
-    .container{
-        display: none;
-    }
-
-    .dot {
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .active {
-        background-color: #717171;
-      }
-
-    .slidspc{
-        display: none;
-    }
-    .miljø img{
-        display: none;
-    }
-
-    .værksted img{
-        display: none;
-    }
-}
-
 
 /*body*/
 body{
@@ -68,14 +34,23 @@ margin-top: 100px;
     justify-content: space-evenly;
 }
 
-.topnav img {
-    height: 100px;
+input{
+    width: 30%;
+    height: 15px;
+    font-size: 10px;
+    margin: auto;
 }
 
-input{
-    width: 400px;
-    height: 10px;
-    padding: 20px;
+.login-logo {
+    width: 30px;
+}
+
+.kurve-logo {
+    width: 30px;
+}
+
+.logo-cykelbasen {
+    width: 30px;
 }
 /*https://  www.youtube.com/watch?v=wlCPOwBr7no*/
 
@@ -104,7 +79,7 @@ header{
 
 nav{/*https://www.youtube.com/watch?v=wlCPOwBr7no*/
     width: 100%;
-    height: 8rem;
+    height: auto;
     color: #000;
     background-color: var(--greenblue);
 }
@@ -135,13 +110,13 @@ nav{/*https://www.youtube.com/watch?v=wlCPOwBr7no*/
 
 
 
-.nav-list a{
-    display: block;
+.nav-list a{    
     color: var(--white);
-    padding: 0 2.5rem;
-    font-size: 1.5rem;
+    padding: 15px;
+    font-size: 15px;
     text-transform: uppercase;
     transition:color 650ms;
+    justify-content: space-between;
 }
 
 .nav-list :hover{
@@ -723,12 +698,13 @@ https://www.javatpoint.com/how-to-center-a-button-in-css besøgt d. 2/6*/
     background-color: var(--white);
     height: 70%;
     width: 220px;
-    position: fixed;
+    float:left;
     top: 0;
     left: 0;
     overflow-x: hidden;
-    padding-top: 30px;
+    margin: 30px 20px;
     margin-top: 100px;
+    padding: 20px;
   }
   .damecyklergrid {
     display: grid;
@@ -737,6 +713,7 @@ https://www.javatpoint.com/how-to-center-a-button-in-css besøgt d. 2/6*/
     justify-content: center; 
     background-position: center;
     display: flex;
+    margin-top:10%;
   }
 
   .hvid-baggrund {
@@ -776,7 +753,7 @@ https://www.javatpoint.com/how-to-center-a-button-in-css besøgt d. 2/6*/
 }
 
 .damecykler img{
-    width: 250px;
+    width: 230px;
 }
 
  
