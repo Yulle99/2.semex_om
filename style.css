@@ -42,7 +42,7 @@ input{
 }
 
 .login-logo {
-    width: 35px;
+    width: 30px;
 }
 
 .kurve-logo {
@@ -51,7 +51,7 @@ input{
 
 .logo-cykelbasen {
     height: 30px;
-    width: 40px;
+    width: 30px;
 }
 /*https://www.youtube.com/watch?v=wlCPOwBr7no*/
 
@@ -1108,6 +1108,7 @@ footer p{
 }
 
 @media (max-width:700px){ /*mobil-format*/
+
     .dot {
         height: 15px;
         width: 15px;
