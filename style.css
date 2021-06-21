@@ -17,40 +17,6 @@ font-family: 'mukta malar';
 
 
 
-@media  (max-width:700px){ /*mobil-format*/
-    .ddmenu img{
-        display: none;
-    }
-    .ddmenu{
-        display: none;
-    }
-
-    .dot {
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .active {
-        background-color: #717171;
-      }
-
-    .slidspc{
-        display: none;
-    }
-    .miljø img{
-        display: none;
-    }
-
-    .værksted img{
-        display: none;
-    }
-}
-
 
 /*body*/
 body{
@@ -84,9 +50,10 @@ input{
 }
 
 .logo-cykelbasen {
+    height: 30px;
     width: 30px;
 }
-/*https://  www.youtube.com/watch?v=wlCPOwBr7no*/
+/*https://www.youtube.com/watch?v=wlCPOwBr7no*/
 
 header{
     width: 100%;
@@ -1137,9 +1104,11 @@ footer p{
     display: none;
 }
 
+
 }
 
 @media (max-width:700px){ /*mobil-format*/
+
     .dot {
         height: 15px;
         width: 15px;
