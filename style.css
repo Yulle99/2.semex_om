@@ -17,40 +17,6 @@ font-family: 'mukta malar';
 
 
 
-@media  (max-width:700px){ /*mobil-format*/
-    .ddmenu img{
-        display: none;
-    }
-    .ddmenu{
-        display: none;
-    }
-
-    .dot {
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .active {
-        background-color: #717171;
-      }
-
-    .slidspc{
-        display: none;
-    }
-    .miljø img{
-        display: none;
-    }
-
-    .værksted img{
-        display: none;
-    }
-}
-
 
 /*body*/
 body{
@@ -86,7 +52,7 @@ input{
 .logo-cykelbasen {
     width: 30px;
 }
-/*https://  www.youtube.com/watch?v=wlCPOwBr7no*/
+/*https://www.youtube.com/watch?v=wlCPOwBr7no*/
 
 header{
     width: 100%;
@@ -98,12 +64,12 @@ header{
 .container{
     width: 100%;
     margin: 0 auto;
-    padding: 0 1.5;
+    padding: 0 1.5rem;
 }
 
 .menu-icons{
     color: #eee;
-    font-size: 4rem;
+    font-size: 2rem;
     position: absolute;
     top: 50%;
     right: 2rem;
@@ -221,9 +187,8 @@ nav img{
 /* footer*/
 footer{
     background:#EFEFEF;
-    padding: 5px;
     display: flex;
-    
+    padding: 10px;    
 }
 
 footer div{
@@ -1052,6 +1017,7 @@ footer p{
 .cykler-alt{
     display: block; 
 }
+}
 
 
 
@@ -1076,71 +1042,73 @@ Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
 
 @media (min-width:1000px){
 
-/*index baggrund*/
-.nyhed{
-    height: 800px;
-}
+    /*index baggrund*/
+    .nyhed{
+        height: 800px;
+    }
 
-.populærekategori{
-    height: 450px;
-}
+    .populærekategori{
+        height: 450px;
+    }
 
-.populærekategori:after{
-    top:-300px;
-}
+    .populærekategori:after{
+        top:-300px;
+    }
 
-.værksted{
-    height: 300px;
-    
-}
-
-.værksted:after{
-   top: -200px;
-}
-
-.tilbud{
-    height: 650px;
-}
-
-.miljø{
-    height: 450px;
-}
-
-.miljø:after{
-    top:-200px;
-    background-color: var(--white);
-    background-image: none;
-}
-
-.lejencykel:after{
-    top:-200px
-}
-
-/*footer style*/
-
-footer{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 95px;
-    padding-right: 95px;
+    .værksted{
+        height: 300px;
         
-}
+    }
 
-footer div{
-    margin-top: 10px;
-}
+    .værksted:after{
+    top: -200px;
+    }
 
-footer p{
-    font-size: 20px;
-}
+    .tilbud{
+        height: 650px;
+    }
 
-.slids{
-    display: none;
-}
+    .miljø{
+        height: 450px;
+    }
+
+    .miljø:after{
+        top:-200px;
+        background-color: var(--white);
+        background-image: none;
+    }
+
+    .lejencykel:after{
+        top:-200px
+    }
+
+    /*footer style*/
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 95px;
+        padding-right: 95px;
+            
+    }
+
+    footer div{
+        margin-top: 10px;
+    }
+
+    footer p{
+        font-size: 20px;
+    }
+
+    .slids{
+        display: none;
+    }
+
 
 }
 
 @media (max-width:700px){ /*mobil-format*/
+
     .dot {
         height: 15px;
         width: 15px;
@@ -1165,12 +1133,7 @@ footer p{
     .værksted img{
         display: none;
     }
-
-    .topnav{
-        display: none;
-    }
-
-    
+   
 
     .nav-list{
         position: fixed;
@@ -1207,7 +1170,10 @@ footer p{
     
 
     .menu-icons{
+        margin-top: 40px;
         display: block;
+        color: black;
+        background-color: var(--greenblue);
     }    
 
     .ion-md-close{
@@ -1227,4 +1193,9 @@ footer p{
         display: flex;
     }
 
-}}
+    .topnav{
+        display: none;
+    
+    }
+
+}
