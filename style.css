@@ -526,9 +526,10 @@ button{
     width: 100px;
   }
 
-  .mærker-alt ul {
-      margin-top: 200px;
-  }
+  .mærker-menu {
+    display: none;
+}
+  
   /* Brugt til "mærker"
   https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
   https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2
@@ -908,19 +909,19 @@ footer p{
     background-color: var(--white);
     height: 70%;
     width: 220px;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     overflow-x: hidden;
     padding-top: 30px;
-    margin-top: 100px;
+    margin-top: 14%;
+    display: block;
   }
   
   .mærker-menu a {
     padding: 2px 10px 2px 30px;
     font-size: 16px;
     color: var(--greenblue);
-    display: block;
   }
   
   .mærker-menu a:hover {
