@@ -54,135 +54,7 @@ input{
 }
 /*https://www.youtube.com/watch?v=wlCPOwBr7no*/
 
-header{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left:0;
-}
 
-.container{
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
-
-.menu-icons{
-    color: #eee;
-    font-size: 2rem;
-    position: absolute;
-    top: 50%;
-    right: 2rem;
-    transform: translatey(-50%);
-    display: none;
-}
-
-nav{/*https://www.youtube.com/watch?v=wlCPOwBr7no*/
-    width: 100%;
-    height: auto;
-    color: #000;
-    background-color: var(--greenblue);
-}
-
-.nav-list{
-    display: flex;
-    margin-left: 50px;
-}
-
-.nav-list li{
-    line-height: 4rem;
-    position: relative;
-}
-
-.sub-menu{
-    width: 50rem;
-    line-height: 4rem;
-    display: block;
-    position: absolute;
-    background-color:white;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 650ms ease;
-    padding: 50px;
-    justify-content: space-between;
-    z-index: 1000;
-}
-
-
-
-.nav-list a{    
-    color: var(--white);
-    padding: 15px;
-    font-size: 15px;
-    text-transform: uppercase;
-    transition:color 650ms;
-    justify-content: space-between;
-}
-
-.nav-list :hover{
-    background: var(--lightblue);
-}
-
-
-.sub-menu a:hover{
-    background-color: lightgrey;
-}
-
-.sub-menu a{
-    color: #000;
-    font-size: 14px;
-    
-}
-
-.sub-menu-mere{
-    width: 20rem;
-    line-height: 4rem;
-    display: block;
-    position: absolute;
-    background-color: white;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 650ms ease;
-    padding: 50px;
-    justify-content: space-between;
-}
-
-.sub-menu-mere a:hover{
-    background-color: lightgrey;
-}
-
-.sub-menu-mere a{
-    color: #000;
-    font-size: 14px;
-    
-}
-
-.nav-list :hover > .sub-menu-mere{
-    opacity: 1 ;
-    visibility: visible;
-} 
-
-
-
-
-.nav-list :hover > .sub-menu{
-    opacity: 1 ;
-    visibility: visible;
-} 
-
-nav img{
-    height: 150px;
-    width: 150px;
-}
-
-.flex{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.sub-menu :hover{
-    background: white;
-}
 
 /* footer*/
 footer{
@@ -215,8 +87,8 @@ width: 45px;
 .nyhed{
     position: relative;
     width: 100%;
-    height: 550px;
-    color: white;
+    height:26em;
+    color: black;
     box-sizing: border-box; 
 }
 
@@ -224,7 +96,7 @@ width: 45px;
     position:absolute;
     content: '';
     background-image: url("img/cyklister-edit.jpg");
-    top:0;
+    top:-20%;
     right: 0;
     bottom: 0;
     left: 0;
@@ -235,13 +107,12 @@ width: 45px;
 }
 
 .nyhed div{
-    padding: 40px 20px 0px 120px;/*top/right/bottom/left*/
+    padding: 3% 10% 1% 40%;/*top/right/bottom/left*/
 }
 
 .nyhed h1 {
     font-size: 32px;
     font-weight: bolder;
-    padding-top: 100px;
     
 }
 
@@ -259,7 +130,7 @@ width: 45px;
 .populærekategori{
     position: relative;
     width: 100%;
-    height: 500px;
+    height:30em;
     box-sizing: border-box;
 }
 
@@ -267,7 +138,7 @@ width: 45px;
     position:absolute;
     content: '';
     background-color: var(--white);
-    top: -70px;
+    top: -20%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -289,7 +160,7 @@ width: 45px;
 .værksted{
     position: relative;
     width: 100%;
-    height: 500px;
+    height:30em;
     box-sizing: border-box;
 }
 
@@ -327,8 +198,8 @@ width: 45px;
 
 .tilbud{
     position: relative;
-    width:100%;
-    height: 500px;
+    width: 100%;
+    height:30em;
     box-sizing: border-box;
 }
 
@@ -350,7 +221,7 @@ width: 45px;
     position: relative;
     color: white;
     width: 100%;
-    height: 350px;
+    height:30em;
     box-sizing: border-box;
 }
 
@@ -385,9 +256,9 @@ width: 45px;
 
 .lejencykel{
     position: relative;
-    color:#fff;
-    width:100%;
-    height: 350px;
+    color: black;
+    width: 100%;
+    height:26em;
     box-sizing: border-box;
     
 }
@@ -411,7 +282,7 @@ width: 45px;
 .extra{
     position: relative;
     width: 100%;
-    height: 20%;
+    height:26em;
     box-sizing: border-box;
     background-color: #fff;
 }
@@ -1108,7 +979,7 @@ Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
 
 }
 
-@media (max-width:700px){ /*mobil-format*/
+@media (max-width:991px){ /*mobil-format*/
 
     .dot {
         height: 15px;
@@ -1136,63 +1007,6 @@ Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
     }
    
 
-    .nav-list{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        display: none;
-        align-items: initial;
-        flex-direction: column;
-        background-color: var(--white);
-        z-index: 1000;
-    }
-
-    .nav-list > li{
-        line-height: 2rem;
-    }
-
-    .nav-list :hover{
-        background-color: lightgrey;
-    }
-    .sub-menu{
-        position: initial;
-        border: 3px solid transparent;
-        margin-left: 1rem;
-        max-height: 0;
-    }
-
-    .nav-list li :hover> .sub-menu{
-        opacity: 1;
-        visibility: visible;
-        max-height: initial;
-    }
-    
-
-    .menu-icons{
-        margin-top: 40px;
-        display: block;
-        color: black;
-        background-color: var(--greenblue);
-    }    
-
-    .ion-md-close{
-        display: none;
-    }
-
-    nav.active .ion-md-close{
-        display: block;
-        color: black;
-    }
-
-    nav.active .ion-md-menu{
-        display: none;
-    }
-
-    nav.active .nav-list{
-        display: flex;
-    }
 
     .topnav{
         display: none;
