@@ -585,11 +585,11 @@ https://www.javatpoint.com/how-to-center-a-button-in-css besøgt d. 2/6*/
     justify-content: center; 
     background-position: center;
     display: flex;
-    margin-top:10%;
+    margin-top:5%;
   }
 
   .hvid-baggrund {
-      width: 80%;
+      width: 95%;
       height: 90%;
       background-color: var(--white);
   }
@@ -607,7 +607,7 @@ https://www.javatpoint.com/how-to-center-a-button-in-css besøgt d. 2/6*/
       display: grid;
     grid-template-columns: auto auto;
     grid-gap: 40px 20px;
-    padding-left: 240px;
+   
 }
  
 
@@ -655,12 +655,12 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2 */
 
 /*index*/
 .nyhed div{
-   margin-left: 1100px;
+   padding-left: 50%;
 }
 
 .nyhed h1{
-    padding-top: 200px ;
-    font-size: 48px;
+    padding-top: 20% ;
+    font-size:60px;
 }
 
 .nyhed p{
@@ -670,6 +670,10 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2 */
 .nyhed button{
     margin: 0;
     width: 80%;
+}
+
+.populærekategori h2{
+    font-size: 48px;
 }
 
 .værksted{
@@ -911,15 +915,15 @@ Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
 */
 
 
-@media (min-width:1000px){
+@media (min-width:700px){
 
     /*index baggrund*/
     .nyhed{
-        height: 800px;
+        height: 70vh;
     }
 
     .populærekategori{
-        height: 450px;
+        height: 70vh;
     }
 
     .populærekategori:after{
