@@ -197,6 +197,7 @@
 }
 
 
+
 /* responsive */
 
 @media(max-width: 701px){
@@ -217,9 +218,9 @@
 }
 	.header .nav-menu{
 		position: fixed;
-		right: -280px;
+		right: -50%;
 		visibility: hidden;
-		width: 280px;
+		width: 50%;
 		height: 100%;
 		top:0;
 		overflow-y: auto;
