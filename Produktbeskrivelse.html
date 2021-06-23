@@ -6,194 +6,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
     <title></title>
     <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 </head>
 <body>
-    <header>
+    <!-- header start  -->
+    <header class="header">
         <div class="topnav">
             <a href="index.html"><img src="img/logo.png" alt="logo" ></a>
-            <input type="søg">
+            <input type="search" >
             <img src="img/icon/login-icon-3057-thumb.png" alt="log in">
             <img src="img/icon/Ecommerce-Shopping-Basket-icon.png" alt="kurve">
         </div>
-        <section class="container">
-            <nav>
-                <div class="menu-icons">
-                    <i class="icon ion-md-menu"></i>
-                    <i class="icon ion-md-close"></i>
+        <div class="container">
+            <div class="header-main">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo" ></a>
+            </div>
+            <div class="open-nav-menu">
+                <span></span>
+            </div>
+            <div class="menu-overlay">
+            </div>
+            <!-- navigation menu start -->
+            <nav class="nav-menu">
+                <div class="close-nav-menu">
+                    <img src="img/close.svg" alt="close">
                 </div>
-                <a href="index.html" class="logo"></a>
-                <ul class="nav-list">
-                    <li>
-                        <a href="#">CYKLER</a>
-                        <i class="icon ion-md-arrow-dropdown"></i>
+                <ul class="menu">
+                    <li class="menu-item ddmenu">
+                    <a href="#" data-toggle="sub-menu">CYKLER <i class="plus"></i></a>
+                    <ul class="sub-menu">
+                            <img src="img/cykel.jpg" alt="">    
+                            <li class="menu-item"><a href="damecykler.html">DAME CYKEL</a></li>
+                            <li class="menu-item"><a href="damecykler.html">Indvendig gear</a></li>
+                            <li class="menu-item"><a href="damecykler.html">Udvendig gear</a></li>
+
+                            <img src="img/cykel.jpg" alt="">    
+                            <li class="menu-item"><a href="damecykler.html">Herre CYKEL</a></li>
+                            <li class="menu-item"><a href="damecykler.html">Indvendig gear</a></li>
+                            <li class="menu-item"><a href="damecykler.html">Udvendig gear</a></li>
+
+                            <img src="img/cykel.jpg" alt="">    
+                            <li class="menu-item"><a href="damecykler.html">BØRNECYKEL</a></li>
+                            <li class="menu-item"><a href="damecykler.html">pige</a></li>
+                            <li class="menu-item"><a href="damecykler.html">drenge</a></li>
+
+                            <img src="img/cykel.jpg" alt="">    
+                            <li class="menu-item"><a href="damecykler.html">Shoppingcykel</a></li>
+                            <li class="menu-item"><a href="damecykler.html">Dame</a></li>
+                            <li class="menu-item"><a href="damecykler.html">Herre</a></li>                     
+                    </ul>
+                    </li>
+                    <li class="menu-item ddmenu">
+                        <a href="#" data-toggle="sub-menu">ElCYKLER <i class="plus"></i></a>
                         <ul class="sub-menu">
-                           <div class="flex">
-                            <div>
-                                <img src="img/cykel.jpg" alt="">
-                                <li><a href="damecykler.html">DAME CYKEL</a></li>
-                                <li><a href="damecykler.html">Indvendig gear</a></li>
-                                <li><a href="damecykler.html">Udvendig gear</a></li>
-                            </div>  
-                            <div>
-                                <img src="img/cykel.jpg" alt="">
-                                <li><a href="#">HERRE CYKEL</a></li>
-                                <li><a href="#">Indvendig gear</a></li>
-                                <li><a href="#">Udvendig gear</a></li>
-                            </div>
-                            <div>
-                                <img src="img/cykel.jpg" alt="">
-                                <li><a href="#">BØRNECYKEL</a></li>
-                                <li><a href="#">Pige</a></li>
-                                <li><a href="#">Dreng</a></li>
-                            </div>  
-                            <div>
-                                <img src="img/cykel.jpg" alt="">
-                                <li><a href="#">Shoppingcykel</a></li>
-                                <li><a href="#">Dame</a></li>
-                                <li><a href="#">Herre</a></li>
-                            </div>
-                           </div>
-                           <div class="flex">
-                            <div>
-                                <img src="img/cykel.jpg" alt="">
-                                <li><a href="damecykler.html">DAME CYKEL</a></li>
-                                <li><a href="#">Indvendig gear</a></li>
-                                <li><a href="#">Udvendig gear</a></li>
-                            </div>  
-                            <div>
-                                <img src="img/cykel.jpg" alt="">
-                                <li><a href="#">HERRE CYKEL</a></li>
-                                <li><a href="#">Indvendig gear</a></li>
-                                <li><a href="#">Udvendig gear</a></li>
-                            </div>
-                            <div>
-                                <img src="img/cykel.jpg" alt="">
-                                <li><a href="#">BØRNECYKEL</a></li>
-                                <li><a href="#">Pige</a></li>
-                                <li><a href="#">Dreng</a></li>
-                            </div>  
-                            <div>
-                                <img src="img/cykel.jpg" alt="">
-                                <li><a href="#">Shoppingcykel</a></li>
-                                <li><a href="#">Dame</a></li>
-                                <li><a href="#">Herre</a></li>
-                            </div>
-                           </div>
+                            <img src="img/cykel.jpg" alt="">
+                            <li class="menu-item"><a href="#">DAME ELCYKEL</a></li>
+                            <img src="img/cykel.jpg" alt="">
+                            <li class="menu-item"><a href="#">HERRE ELCYKEL</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">ElCYKLER</a>
-                        <i class="icon ion-md-arrow-dropdown"></i>
-                        <ul class="sub-menu">
-                            <div class="flex">
-                                <div>
-                                    <img src="img/cykel.jpg" alt="">
-                                    <li><a href="#">DAME ELCYKEL</a></li>
-                                </div>  
-                                <div>
-                                    <img src="img/cykel.jpg" alt="">
-                                    <li><a href="#">HERRE ELCYKEL</a></li>
-                                </div> 
-                            </div>
-                        </ul>
+                
+                    <li class="menu-item ddmenu">
+                    <a href="#" data-toggle="sub-menu">UDSTYRs <i class="plus"></i></a>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">BAGAGEBÆRE</a></li>
+                        <li class="menu-item"><a href="#">CYKELKURV</a></li>
+                        <li class="menu-item"><a href="#">CYKELSADLER</a></li>
+
+                            <li class="menu-item"><a href="#">BØRNESTOLE</a></li>
+                            <li class="menu-item"><a href="#">CYKELLYGTER</a></li>
+                            <li class="menu-item"><a href="#">CYKELSKÆRM</a></li>
+
+                            <li class="menu-item"><a href="#">CYKELANHÆNGER</a></li>
+                            <li class="menu-item"><a href="#">CYKELLÅS</a></li>
+                            <li class="menu-item"><a href="#">STØTTEBEN</a></li>
+
+                            <li class="menu-item"><a href="#">CYKELHJELM</a></li>
+                            <li class="menu-item"><a href="#">CYKELPLEJE</a></li>
+                    </ul>
                     </li>
-                    <li>
-                        <a href="#">UDSTYR</a>
-                        <i class="icon ion-md-arrow-dropdown"></i>
+                    <li class="menu-item">
+                    <a href="#">OUTLET</a>
+                    </li>
+                    <li class="menu-item">
+                    <a href="#">NYHEDER</a>
+                    </li>
+
+                    <li class="menu-item ddmenu">
+                        <a href="#" data-toggle="sub-menu">MÆRKER <i class="plus"></i></a>
                         <ul class="sub-menu">
-                            <div class="flex">
-                                <div>
-                                    <li><a href="#">BAGAGEBÆRE</a></li>
-                                    <li><a href="#">CYKELKURV</a></li>
-                                    <li><a href="#">CYKELSADLER</a></li>
-                                </div>  
-                                <div>
-                                    <li><a href="#">BØRNESTOLE</a></li>
-                                    <li><a href="#">CYKELLYGTER</a></li>
-                                    <li><a href="#">CYKELSKÆRM</a></li>
-                                </div> 
-                                <div>
-                                    <li><a href="#">CYKELANHÆNGER</a></li>
-                                    <li><a href="#">CYKELLÅS</a></li>
-                                    <li><a href="#">STØTTEBEN</a></li>
-                                </div>  
-                                <div>
-                                    <li><a href="#">CYKELHJELM</a></li>
-                                    <li><a href="#">CYKELPLEJE</a></li>
-                                </div>
-                            </div>
+                            <li class="menu-item"><a href="brands.html"><img src="mærker/raleigh.png" alt=""><p>Raleigh</p></a></li>
+                            <li class="menu-item"><a href="brands.html"><img src="mærker/centurion.png" alt=""><p>Centurion</p></a></li>
+                            <li class="menu-item"><a href="brands.html"><img src="mærker/nishiki.png" alt=""><p>Nishiki</p></a></li>
+                            <li class="menu-item"><a href="brands.html"><img src="mærker/dresco.png" alt=""><p>Dresco</p></a></li>
+                            <li class="menu-item"><a href="brands.html"><img src="mærker/ebsen_bikes.png" alt=""><p>Ebsen Bikes</p></a></li>
+                            <li class="menu-item"><a href="brands.html"><img src="mærker/avenue.jpeg" alt=""><p>Avenue</p></a></li>
+                            <li class="menu-item"><a href="brands.html"><img src="mærker/winther.png" alt=""><p>Winther</p></a></li>
+                            <li class="menu-item"><a href="brands.html"><img src="mærker/kildemoes.png" alt=""><p>Kildemoes</p></a></li>
+                            <li class="menu-item"><a href="brands.html"><img src="mærker/everton.jpeg" alt=""><p>Everton</p></a></li>
+                            <li class="menu-item"><a href="brands.html"><img src="mærker/Monark.png" alt=""><p>Monark</p></a></li>
+                            <li class="menu-item"><a href="brands.html"><img src="mærker/fuji.png" alt=""><p>Fuji</p></a></li>
                         </ul>
                     </li>
 
-                    <li>
-                        <a href="#">OUTLET</a>
-                    
-                    </li>
-                    <li>
-                        <a href="#">NYHEDER</a>
+
+                    <li class="menu-item ddmenu">
+                        <a href="#" data-toggle="sub-menu">MERE<i class="plus"></i></a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="mere.html">CykeludlejningL</a></li>
+                            <li class="menu-item"><a href="mere.html">Handelsbetingelser</a></li>
+                            <li class="menu-item"><a href="mere.html">Værksted og reparation</a></li>
+                            <li class="menu-item"><a href="mere.html">Levering</a></li>
+                            <li class="menu-item"><a href="mere.html">Finansiering</a></li>
+                            <li class="menu-item"><a href="mere.html">FAQ</a></li>
+                            <li class="menu-item"><a href="mere.html">Kontakt osL</a></li>
+                        </ul>
                     </li>
 
-                    <li>
-                        <a href="#">MÆRKER</a>
-                        <i class="icon ion-md-arrow-dropdown"></i>
-                        <ul class="sub-menu">
-                            <div class="flex">
-                                <a href="brands.html"><img src="mærker/raleigh.png" alt=""></a>
-                                <img src="mærker/centurion.png" alt="">
-                                <img src="mærker/nishiki.png" alt="">
-                                <img src="mærker/dresco.png" alt="">                   
-                            </div>
-                            <div class="flex">
-                                <img src="mærker/ebsen_bikes.png" alt="">
-                                <img src="mærker/avenue.jpeg" alt="">
-                                <img src="mærker/winther.png" alt="">
-                                <img src="mærker/kildemoes.png" alt="">
-                            </div>
-                            <div class="flex">
-                                <img src="mærker/everton.jpeg" alt="">
-                                <img src="mærker/Monark.png" alt="">
-                                <img src="mærker/fuji.png" alt="">
-                            </div>
-                        
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">MERE</a>
-                        <i class="icon ion-md-arrow-dropdown"></i>
-                        <ul class="sub-menu-mere">
-                            <div class="flex">
-                                <div>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                </div>  
-                                <div>
-                                    <li><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                </div> 
-                                <div>
-                                    <li><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                </div>  
-                                <div>
-                                    <li><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                </div>
-                            </div>
-                        </ul>
-                        
-                    </li>
-                    
                 </ul>
             </nav>
-        </section>
+            <!-- navigation menu end -->
+            </div>
+        </div>
     </header>
-
+    <!-- header end -->
     <main>
       <section class="produktbesk">
        
@@ -379,6 +318,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 
 
